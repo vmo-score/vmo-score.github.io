@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="https://vmo-score.github.io/theme/stylesheet/style.min.css">
+
+  <link rel="stylesheet" type="text/css" href="https://vmo-score.github.io/theme/pygments/github.min.css">
+  <link rel="stylesheet" type="text/css" href="https://vmo-score.github.io/theme/font-awesome/css/font-awesome.min.css">
+
+
+    <link href="https://vmo-score.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Interactive Machine Improvisation Scenarios Atom">
+
+
+    <link rel="shortcut icon" href="/theme/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/theme/img/favicon.ico" type="image/x-icon">
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+
+    <meta name="author" content="Jaime Arias, Myriam Desainte-Catherine &amp; Shlomo Dubnov" />
+    <meta name="description" content="" />
+<meta property="og:site_name" content="Interactive Machine Improvisation Scenarios"/>
+<meta property="og:type" content="blog"/>
+<meta property="og:title" content="Interactive Machine Improvisation Scenarios"/>
+<meta property="og:description" content=""/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="https://vmo-score.github.io"/>
+
+  <title>Interactive Machine Improvisation Scenarios &ndash; About</title>
+</head>
+<body>
+  <aside>
+    <div>
+      <a href="https://vmo-score.github.io">
+        <img src="https://vmo-score.github.io/theme/img/profile.png" alt="VMO-Score" title="VMO-Score">
+      </a>
+      <h1><a href="https://vmo-score.github.io">VMO-Score</a></h1>
+<p>Automatic Construction of Interactive Machine Improvisation
+                  Scenarios from Audio Recordings</p>      <nav>
+        <ul class="list">
+          <li><a href="https://vmo-score.github.io/">About</a></li>
+          <li><a href="https://vmo-score.github.io/download.html">Download</a></li>
+          <li><a href="https://vmo-score.github.io/examples.html">Examples</a></li>
+        </ul>
+      </nav>
+      <ul class="social">
+        <li><a class="sc-github" href="https://github.com/vmo-score/vmo-score" target="_blank"><i class="fa fa-github"></i></a></li>
+      </ul>
+    </div>
+  </aside>
+  <main>
+
+<article>
+  <header>
+    <h1 id="about">About</h1>
+  </header>
+  <div>
+    <p><a class="reference external" href="https://vmo-score.github.io/">VMO-Score</a> <a href='#Arias:2016' id='ref-Arias:2016-1'>(Arias et al., 2016)</a> is a tool to generate an interactive score to control
+the improvisation according to larger structures found in an audio recording.</p>
+<p>Intuitively, <a class="reference external" href="https://vmo-score.github.io/">VMO-Score</a> takes an audio file as an input and uses the tool <a class="reference external" href="https://github.com/wangsix/vmo">VMO</a>
+<a href='#Wang:2015' id='ref-Wang:2015-1'>(Wang and Dubnov, 2015)</a> to generate an Audio Oracle <a href='#Dubnov:2011' id='ref-Dubnov:2011-1'>(Dubnov et al., 2011)</a> for improvisation. In
+addition, VMO is also used to do a segmentation analysis of the input
+<a href='#Wang2016' id='ref-Wang2016-1'>(Wang and Mysore, 2016)</a>. Once the tool has identified possible <em>natural</em> transitions
+between sections with similar musical content, it translates the musical
+structure into a Petri net <a href='#Murata:1989' id='ref-Murata:1989-1'>(Murata, 1989)</a> model in order to provide a higher,
+more intuitive and formal representation of this structure. Therefore, the
+artist can modify the structure of the Petri net in order to control the
+improvisation by adding temporal and logical constraints.</p>
+<p><a class="reference external" href="https://vmo-score.github.io/">VMO-Score</a> also generates an interactive score based on the Petri net structure
+for the inter-media sequencer <a class="reference external" href="http://i-score.org/">i-score</a> <a href='#delaHogue:2016' id='ref-delaHogue:2016-1'>(dlHogue et al., 2016)</a>. This tool provides
+a complete graphical interface for structuring and performing in real-time the
+improvisation. Such improvisation is carried out by the Max interface of the
+Audio Oracle called <a class="reference external" href="https://gitlab.com/himito/PyOracle_I-score">PyOracle</a> <a href='#Surges:2013' id='ref-Surges:2013-1'>(Surges and Dubnov, 2013)</a> which is controlled by <a class="reference external" href="http://i-score.org/">i-score</a>
+using OSC <a class="footnote-reference" href="#id2" id="id1">[1]</a> messages.</p>
+<img alt="summary" class="align-center" src="https://vmo-score.github.io/images/summary.png" style="width: 50%;" />
+<table class="docutils footnote" frame="void" id="id2" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td><em>Open Sound Control</em> (<a class="reference external" href="http://opensoundcontrol.org/">OSC</a>) is a protocol for communication among multimedia devices.</td></tr>
+</tbody>
+</table>
+<hr>
+<h2>Bibliography</h2>
+<p id='Arias:2016'>Jaime Arias, Myriam Desainte-Catherine, and Shlomo Dubnov.
+Automatic Construction of Interactive Machine Improvisation Scenarios from Audio Recordings.
+In <em>4th International Workshop on Musical Metacreation, MUME 2016, Paris, France, June 27 – July 1, 2016</em>. 2016.
+<a href="http://bit.ly/2mCAmDZ">URL: http://bit.ly/2mCAmDZ</a>. <a class="cite-backref" href="#ref-Arias:2016-1" title="Jump back to reference 1">↩</a></p>
+<p id='delaHogue:2016'>Théo de&nbsp;la Hogue, Jean-Michaël Celerier, and Pascal Baltazar.
+Presentation d'un Formalisme Graphique pour l'Ecriture de Scenarios Interactifs.
+In <em>Journées d'Informatique Musicale, JIM 2016, Albi, France, March 31 - April 2, 2016</em>, 37&ndash;41. Albi, 2016. <a class="cite-backref" href="#ref-delaHogue:2016-1" title="Jump back to reference 1">↩</a></p>
+<p id='Dubnov:2011'>Shlomo Dubnov, Gerard Assayag, and Arshia Cont.
+Audio Oracle Analysis of Musical Information Rate.
+In <em>2011 IEEE Fifth International Conference on Semantic Computing</em>, 567&ndash;571. IEEE, sep 2011.
+<a href="http://dx.doi.org/10.1109/ICSC.2011.106">doi:10.1109/ICSC.2011.106</a>. <a class="cite-backref" href="#ref-Dubnov:2011-1" title="Jump back to reference 1">↩</a></p>
+<p id='Murata:1989'>Tadao Murata.
+Petri Nets: Properties, Analysis and Applications.
+<em>Proceedings of the IEEE</em>, 1989.
+<a href="http://dx.doi.org/10.1109/5.24143">doi:10.1109/5.24143</a>. <a class="cite-backref" href="#ref-Murata:1989-1" title="Jump back to reference 1">↩</a></p>
+<p id='Surges:2013'>Greg Surges and Shlomo Dubnov.
+Feature Selection and Composition Using PyOracle.
+In <em>AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment</em>. 2013.
+<a href="https://www.aaai.org/ocs/index.php/AIIDE/AIIDE13/paper/view/7452">URL: https://www.aaai.org/ocs/index.php/AIIDE/AIIDE13/paper/view/7452</a>. <a class="cite-backref" href="#ref-Surges:2013-1" title="Jump back to reference 1">↩</a></p>
+<p id='Wang:2015'>Cheng-i Wang and Shlomo Dubnov.
+The Variable Markov Oracle: Algorithms for Human Gesture Applications.
+<em>IEEE MultiMedia</em>, 22(4):52&ndash;67, oct 2015.
+<a href="http://dx.doi.org/10.1109/MMUL.2015.76">doi:10.1109/MMUL.2015.76</a>. <a class="cite-backref" href="#ref-Wang:2015-1" title="Jump back to reference 1">↩</a></p>
+<p id='Wang2016'>Cheng-I Wang and Gautham&nbsp;J. Mysore.
+Structural Segmentation with the Variable Markov Oracle and Boundary Adjustment.
+In <em>The 41st IEEE International Conference on Acoustics, Speech and Signal Processing</em>. Shanghai, China, 2016. IEEE. <a class="cite-backref" href="#ref-Wang2016-1" title="Jump back to reference 1">↩</a></p>
+
+  </div>
+</article>
+
+    <footer>
+        <p>&copy; Jaime Arias, Myriam Desainte-Catherine &amp; Shlomo Dubnov 2017</p>
+<p>Built using <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a></p>    </footer>
+  </main>
+
+
+
+
+
+</body>
+</html>

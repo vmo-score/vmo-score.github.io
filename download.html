@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="https://vmo-score.github.io/theme/stylesheet/style.min.css">
+
+  <link rel="stylesheet" type="text/css" href="https://vmo-score.github.io/theme/pygments/github.min.css">
+  <link rel="stylesheet" type="text/css" href="https://vmo-score.github.io/theme/font-awesome/css/font-awesome.min.css">
+
+
+    <link href="https://vmo-score.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Interactive Machine Improvisation Scenarios Atom">
+
+
+    <link rel="shortcut icon" href="/theme/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/theme/img/favicon.ico" type="image/x-icon">
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+
+    <meta name="author" content="Jaime Arias, Myriam Desainte-Catherine &amp; Shlomo Dubnov" />
+    <meta name="description" content="" />
+<meta property="og:site_name" content="Interactive Machine Improvisation Scenarios"/>
+<meta property="og:type" content="blog"/>
+<meta property="og:title" content="Interactive Machine Improvisation Scenarios"/>
+<meta property="og:description" content=""/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="https://vmo-score.github.io"/>
+
+  <title>Interactive Machine Improvisation Scenarios &ndash; Download</title>
+</head>
+<body>
+  <aside>
+    <div>
+      <a href="https://vmo-score.github.io">
+        <img src="https://vmo-score.github.io/theme/img/profile.png" alt="VMO-Score" title="VMO-Score">
+      </a>
+      <h1><a href="https://vmo-score.github.io">VMO-Score</a></h1>
+<p>Automatic Construction of Interactive Machine Improvisation
+                  Scenarios from Audio Recordings</p>      <nav>
+        <ul class="list">
+          <li><a href="https://vmo-score.github.io/">About</a></li>
+          <li><a href="https://vmo-score.github.io/download.html">Download</a></li>
+          <li><a href="https://vmo-score.github.io/examples.html">Examples</a></li>
+        </ul>
+      </nav>
+      <ul class="social">
+        <li><a class="sc-github" href="https://github.com/vmo-score/vmo-score" target="_blank"><i class="fa fa-github"></i></a></li>
+      </ul>
+    </div>
+  </aside>
+  <main>
+
+<article>
+  <header>
+    <h1 id="download">Download</h1>
+  </header>
+  <div>
+    <p>You can download the <strong>latest release</strong> <a class="reference external" href="https://github.com/vmo-score/vmo-score/releases">here</a> or clone the
+repository and follow the manual installation:</p>
+<div class="highlight"><pre><span></span>git clone --recursive https://github.com/vmo-score/vmo-score.git
+</pre></div>
+<div class="section" id="external-applications">
+<h2>External Applications</h2>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/vmo-score/PyOracle_I-score">PyOracle</a>: Max interface for the Audio Oracle.</li>
+<li><a class="reference external" href="http://i-score.org/">i-score</a>: A free and open-source inter-media sequencer. A fork with the automatic generation tool can be found <a class="reference external" href="https://github.com/vmo-score/i-score/releases/latest">here</a>.</li>
+</ul>
+</div>
+<div class="section" id="manual-installation">
+<h2>Manual Installation</h2>
+<div class="section" id="dependencies">
+<h3>Dependencies</h3>
+<ul>
+<li><p class="first"><a class="reference external" href="https://www.ibisc.univ-evry.fr/~fpommereau/SNAKES/">snakes</a>: Petri nets editor and simulator.</p>
+<div class="highlight"><pre><span></span>pip install git+https://github.com/himito/snakes.git
+</pre></div>
+</li>
+<li><p class="first"><a class="reference external" href="http://www.mega-nerd.com/SRC/">libsamplerate</a>: Sample Rate Converter for audio (<em>required by librosa</em>).</p>
+<div class="highlight"><pre><span></span><span class="lineno">1 </span>curl -L http://www.mega-nerd.com/SRC/libsamplerate-0.1.8.tar.gz <span class="o">|</span> tar xz
+<span class="lineno">2 </span><span class="k">cd</span> libsamplerate-0.1.8
+<span class="lineno">3 </span>./configure
+<span class="lineno">4 </span>make
+<span class="lineno">5 </span>make install
+</pre></div>
+</li>
+<li><p class="first"><a class="reference external" href="http://www.graphviz.org/">Graphviz</a>: Open source graph visualization software (<em>required by snakes</em>).</p>
+<div class="highlight"><pre><span></span>brew install graphviz
+</pre></div>
+</li>
+</ul>
+</div>
+<div class="section" id="build">
+<h3>Build</h3>
+<div class="highlight"><pre><span></span><span class="lineno">1 </span><span class="k">cd</span> vmo-score/
+<span class="lineno">2 </span>python setup.py install
+<span class="lineno">3 </span>vmo_generator
+</pre></div>
+</div>
+</div>
+<div class="section" id="usage">
+<h2>Usage</h2>
+<ol class="arabic simple">
+<li>Open <code>vmo_generator</code>.</li>
+</ol>
+<img alt="summary" class="align-center" src="https://vmo-score.github.io/images/vmo-score-open.png" style="width: 70%;" />
+<ol class="arabic simple" start="2">
+<li>Select the audio recording.</li>
+</ol>
+<img alt="summary" class="align-center" src="https://vmo-score.github.io/images/open-audio.png" style="width: 70%;" />
+<ol class="arabic simple" start="3">
+<li>Generate the segmentation.</li>
+</ol>
+<img alt="summary" class="align-center" src="https://vmo-score.github.io/images/segmentation-gui.png" style="width: 70%;" />
+<ol class="arabic simple" start="4">
+<li>Generate the Petri Net.</li>
+</ol>
+<img alt="summary" class="align-center" src="https://vmo-score.github.io/images/petri-net-gui.png" style="width: 70%;" />
+<ol class="arabic simple" start="5">
+<li>Open the <code>json</code> file with <code>i-score</code>.</li>
+</ol>
+<img alt="summary" class="align-center" src="https://vmo-score.github.io/images/iscore-open.png" style="width: 70%;" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<img alt="summary" class="align-center" src="https://vmo-score.github.io/images/iscore-json.png" style="width: 70%;" />
+</div>
+
+  </div>
+</article>
+
+    <footer>
+        <p>&copy; Jaime Arias, Myriam Desainte-Catherine &amp; Shlomo Dubnov 2017</p>
+<p>Built using <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a></p>    </footer>
+  </main>
+
+
+
+
+
+</body>
+</html>
